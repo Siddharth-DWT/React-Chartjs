@@ -1,0 +1,21 @@
+Task 1 
+Create a Component print a static value .
+
+Task 2 
+Create multiple component and print value from all component.
+
+Task 3
+Create a state in component and print the value from state in the present component
+
+Task 4
+Pass the state value from Parent component to child and print the value in child component.
+
+Task 5
+Add a input field and print the input value from the field by updating the state within the parent component.
+
+Task 6
+a)Display initial state value in child component  
+b)Pass the updated value from parent to child and print the updated value.
+
+Task 7 
+a) Take input from child component and update parent state and print the updated state back in child component.

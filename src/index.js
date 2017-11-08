@@ -1,8 +1,17 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+import TestRouting from './Routing/ReactRoute'
+import App from './App';
+import WebApp from './Component/Main'
+//import registerServiceWorker from './registerServiceWorker';
+class Home extends Component {
+    render(){
+        return(
+            <div><WebApp/></div>
+        )
+    }
+}
+
+ReactDOM.render(<TestRouting />, document.getElementById('root'));
+/*registerServiceWorker();*/
