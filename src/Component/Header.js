@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 export default class Header extends Component {
     render(){
-        var divStyle = {backgroundImage: "url('http://placehold.it/1900x1080')" }
+        var divStyle = {backgroundImage: "url('https://i.pinimg.com/originals/c1/af/8b/c1af8b69ba1e29c714718ac30d5d4353.jpg')" }
         return(
             <header>
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">

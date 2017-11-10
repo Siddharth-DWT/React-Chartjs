@@ -4,22 +4,17 @@ import {DropDown} from './Reusable'
 
 export class Navbar extends Component
 {
-    constructor(props) {
-
-        super(props);
-        this.toggleClass = this.toggleClass.bind(this)
-            //  this.addActiveClass= this.addActiveClass.bind(this);
-        this.state = {
-            active: false,
-        };
-    }
-
-    toggleClass() {
-        const currentState = this.state.active;
-        this.setState({ active: !currentState });
-    };
-
     render(){
+        var colours = [{
+            name: "Red",
+            hex: "#F21B1B"
+        }, {
+            name: "Blue",
+            hex: "#1B66F2"
+        }, {
+            name: "Green",
+            hex: "#07BA16"
+        }];
 
         return(
             <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -39,31 +34,12 @@ export class Navbar extends Component
                             <li class="nav-item">
                                 <Link class="nav-link" to="/Contact">Contact</Link>
                             </li>
+                            <DropDown list
 
-                            <a onClick={this.toggleClass}><DropDown  active ={this.state.active}/></a>
+                                          ={colours} name = "Prop"/>
+                            <DropDown name = "Blog"/>
+                            <DropDown name = "Other Pages"/>
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Blog
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                                    <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
-                                    <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
-                                    <a class="dropdown-item" href="blog-post.html">Blog Post</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Other Pages
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                                    <a class="dropdown-item" href="full-width.html">Full Width Page</a>
-                                    <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
-                                    <a class="dropdown-item" href="faq.html">FAQ</a>
-                                    <a class="dropdown-item" href="404.html">404</a>
-                                    <a class="dropdown-item" href="pricing.html">Pricing Table</a>
-                                </div>
-                            </li>
                         </ul>
                     </div>
                 </div>
